@@ -1,0 +1,81 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --main-bg-color: #2C73EB;
+  --dark-bg-theme: #1E1E1E;
+  --color-font-subtitle: #696F79;
+  --white: #fff
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.app__container--Img {
+  background-color: var(--main-bg-color);
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__container--Img img {
+  height: 50%;
+}
+
+.app__container--form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.app__container--title {
+  width: 80%;
+}
+
+.app__title {
+  margin: 0 0 12px 0;
+  font-size: 30px;
+}
+
+.app__subtitle {
+  color: var(--color-font-subtitle);
+  font-size: 18px;
+  font-weight: 400;
+}
+@media (max-width: 480px){
+  .app{
+    display: flex;
+  }
+  .app__container--Img{
+    display: none;
+  }
+  .app__container--form{
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 768px) and (min-width: 481px) {
+  .app{
+    display: flex;
+  }
+  .app__container--Img{
+    display: none;
+  }
+  .app__container--form{
+    justify-content: space-evenly;
+  }
+}
