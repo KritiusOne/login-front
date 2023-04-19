@@ -6,13 +6,13 @@
 }
 
 .app__form__sectionPassword,
-.app__form__sectionEmail {
+.app__form__sectionText {
   display: flex;
   flex-direction: column;
 }
 
 .app__form__sectionPassword input[type="password"],
-.app__form__sectionEmail input[type="text"] {
+.app__form__sectionText input[type="text"] {
   height: 30px;
   border-radius: 5px;
   margin-top: 10px;
@@ -20,26 +20,30 @@
   border: 2px solid var(--dark-bg-theme);
   padding: 3px 5px;
 }
-
+.app__form__sectionPassword input[type="password"]::placeholder,
+.app__form__sectionText input[type="text"]::placeholder{
+  font-size: 10px;
+  text-transform: capitalize;
+}
 .app__form__sectionPassword input[type="password"]:focus,
-.app__form__sectionEmail input[type="text"]:focus {
+.app__form__sectionText input[type="text"]:focus {
   outline: none;
   border: 2px solid var(--main-bg-color);
 }
 
 .app__form__sectionPassword input[type="password"]:hover,
-.app__form__sectionEmail input[type="text"]:hover {
+.app__form__sectionText input[type="text"]:hover {
   border: 2px solid var(--main-bg-color);
 }
 
-.app__form__sectionEmail span,
+.app__form__sectionText span,
 .app__form__sectionPassword span {
   font-size: 16px;
   font-weight: 500;
   color: var(--color-font-subtitle);
 }
 
-.app__form__sectionEmail,
+.app__form__sectionText,
 .app__form__sectionPassword,
 .app__form__sectionCheckbox {
   margin-bottom: 10px;

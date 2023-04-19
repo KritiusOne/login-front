@@ -21,6 +21,9 @@
   color: var(--main-bg-color);
   text-decoration: none;
 }
+.button--singIn-First{
+  display: none;
+}
 @media (max-width: 480px){
   
 }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="javascript.svg" type="image/x-icon">
+  <title>Registrarse</title>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/registro.css">
+</head>
+
+<body>
+  <div class="app">
+    <div class="sectionLogin app__container--form">
+      <div class="app__buttonBack--container">
+        <i class="fa-solid fa-chevron-left app__buttonBack__symbol"></i>
+        <a href="index.html" class="app__link--back">ATRAS</a>
+      </div>
+      <div class="app__container--title">
+        <h1 class="app__title">Registrate</h1>
+        <span class="app__subtitle">Si ya es miembro, puede iniciar sesión con su dirección de correo electrónico y contraseña.</span>
+      </div>
+      <form action="" class="app__form">
+        <div class="app__form__sectionText groupEmail">
+          <span class="app__form__sectionText__title">Correo</span>
+          <input type="text" placeholder="CORREO ELECTRONICO" id="input--Correo">
+        </div>
+        <div class="app__form__sectionPassword">
+          <span class="app__form__sectionPassword__title">Contraseña</span>
+          <input type="password" placeholder="CONTRASEÑA" id="input--Password">
+        </div>
+        <div class="app__form__sectionPassword">
+          <span class="app__form__sectionPassword__title">Confirmar contraseña</span>
+          <input type="password" placeholder="CONTRASEÑA" id="input--ConfirmPassword">
+        </div>
+        <!-- cuando se le de a siguiente aparecerá -->
+        <div class="app__form__sectionText second-Line">
+          <span class="app__form__sectionText__title">Nombre</span>
+          <input type="text" placeholder="Nombre" id="input--nombre">
+        </div>
+        <div class="app__form__sectionText second-Line">
+          <span class="app__form__sectionText__title">Apellido</span>
+          <input type="text" placeholder="Apellido" id="input--apellido">
+        </div>
+        <div class="app__form__sectionText second-Line">
+          <span class="app__form__sectionText__title">Ciudad</span>
+          <input type="text" placeholder="Ciudad" id="input--city">
+        </div>
+        <div class="app__form__sectionText second-Line">
+          <span class="app__form__sectionText__title">Direccion</span>
+          <input type="text" placeholder="Direccion" id="input--direccion">
+        </div>
+        <button class="app__form__button button--Next" id="button--Next">Siguiente</button>
+        <button class="app__form__button button--singIn-First ">Registrarme</button>
+      </form>
+    </div>
+    <div class="sectionLogin app__container--Img">
+      <img src="img/logo-transparent.png" alt="logo casas">
+    </div>
+  </div>
+  <script src="js/manageSingIn.js"></script>
+  <script src="https://kit.fontawesome.com/5ad8ae8b3e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
